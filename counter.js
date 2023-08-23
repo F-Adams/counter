@@ -1,19 +1,32 @@
-document.getElementById("increase").addEventListener("click", increase);
-document.getElementById("reset").addEventListener("click", reset);
-document.getElementById("decrease").addEventListener("click", decrease);
+// function increase() {
+//     let currentCount = document.getElementById('output').textContent;
+//     document.getElementById('output').textContent = Number(currentCount) + 1;
+// };
 
-function increase() {
-    let currentCount = document.getElementById('output').textContent;
-    document.getElementById('output').textContent = Number(currentCount) + 1;
-};
+// function decrease() {
+//     let currentCount = document.getElementById('output').textContent;
+//     document.getElementById('output').textContent = Number(currentCount) - 1;
+// };
 
-function decrease() {
-    let currentCount = document.getElementById('output').textContent;
-    document.getElementById('output').textContent = Number(currentCount) - 1;
-};
+// function reset() {
+//     let currentCount = 0;
+//     document.getElementById('output').textContent = currentCount;
+// };
 
-function reset() {
-    let currentCount = 0;
-    document.getElementById('output').textContent = currentCount;
-};
+const counter = {
+    add: function () {
+        let currentCount = Number(document.getElementById('output').textContent);
+        document.getElementById('output').textContent = currentCount + 1;
+    },
+    subtract: function () {
+        let currentCount = Number(document.getElementById('output').textContent);
+        document.getElementById('output').textContent = currentCount - 1;
+    },
+    reset: function () {
+        document.getElementById('output').textContent = 0;
+    }
+}
 
+document.getElementById("add").addEventListener("click", counter.add);
+document.getElementById("reset").addEventListener("click", counter.reset);
+document.getElementById("subtract").addEventListener("click", counter.subtract);
