@@ -1,20 +1,3 @@
-// function increase() {
-//     let currentCount = document.getElementById('output').textContent;
-//     document.getElementById('output').textContent = Number(currentCount) + 1;
-// };
-
-// function decrease() {
-//     let currentCount = document.getElementById('output').textContent;
-//     document.getElementById('output').textContent = Number(currentCount) - 1;
-// };
-
-// function reset() {
-//     let currentCount = 0;
-//     document.getElementById('output').textContent = currentCount;
-// };
-
-let currentCount = Number(document.getElementById('output').textContent);
-
 const counter = {
     add: function () {
         document.getElementById('output').textContent++;
