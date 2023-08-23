@@ -17,11 +17,9 @@ let currentCount = Number(document.getElementById('output').textContent);
 
 const counter = {
     add: function () {
-        // let currentCount = Number(document.getElementById('output').textContent);
         document.getElementById('output').textContent++;
     },
     subtract: function () {
-        // let currentCount = Number(document.getElementById('output').textContent);
         document.getElementById('output').textContent--;
     },
     reset: function () {
