@@ -13,14 +13,16 @@
 //     document.getElementById('output').textContent = currentCount;
 // };
 
+let currentCount = Number(document.getElementById('output').textContent);
+
 const counter = {
     add: function () {
-        let currentCount = Number(document.getElementById('output').textContent);
-        document.getElementById('output').textContent = currentCount + 1;
+        // let currentCount = Number(document.getElementById('output').textContent);
+        document.getElementById('output').textContent++;
     },
     subtract: function () {
-        let currentCount = Number(document.getElementById('output').textContent);
-        document.getElementById('output').textContent = currentCount - 1;
+        // let currentCount = Number(document.getElementById('output').textContent);
+        document.getElementById('output').textContent--;
     },
     reset: function () {
         document.getElementById('output').textContent = 0;
